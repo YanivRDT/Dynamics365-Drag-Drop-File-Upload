@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <link href="dyn_DnDStyle.css" rel="stylesheet" />
+    <title>Drag and Drop File Upload</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <input type="text" id="title" placeholder="Title" class="textbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="4" id="description" placeholder="Description"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="dyn_ico_16_attach.gif" class="attachmentImg" />
+                    <input type="file" id="fileselect" class="fileSelect" name="fileselect[]" />
+                    <br />
+                    <div id="filedrag" placeholder="Description">or drop file here</div>
+                    <input type="button" id="createAttachment" value="Done" style="float: right;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="notificationArea" class="notifactionsArea"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="dyn_jquery.js"></script>
+    <script src="dyn_DnDServices.js"></script>
+</body>
+</html>
